@@ -2,9 +2,10 @@
 
 body { 
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 	color: #FCEAA2;
 	font-weight: 400;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	text-shadow: 0 1px 4px rgba(0,0,0,0.1);
 	background-color: #242524; 
 }
 
