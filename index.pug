@@ -7,8 +7,41 @@ html(lang="en")
 		link(rel="stylesheet" href="css/custom.css")
 		title OoBleck
 		script(src="js/jquery.slim.min.js")
+		script(src="https://use.fontawesome.com/66f808d981.js")
 	body
-		p Hello, world!
+		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.oob-navbar
+			a.navbar-brand(href="#")
+				img(alt="Out of Bounds Comedy Festival" src="img/logo-no-text.png" width="133px" height="auto")
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-content")
+				span.navbar-toggler-icon
+			#navbar-content.collapse.navbar-collapse
+				ul.navbar-nav.mr-auto.oob-nav
+					li.nav-item.blue
+						a.nav-link(href="#") Schedule
+					li.nav-item.red
+						a.nav-link(href="#") About
+					li.nav-item.yellow
+						a.nav-link(href="#") Blog
+					li.nav-item.green
+						a.nav-link(href="#") Get Festival Pass
+		main
+			.container
+
+		footer.bg-dark
+			ul
+				li 
+					a.fa.fa-facebook-official.fa-lg(href="http://www.facebook.com/oobfest" title="Facebook")
+				li 
+					a.fa.fa-twitter-square.fa-lg(href="http://www.twitter.com/oobfest" title="Twitter")
+				li
+					a.fa.fa-instagram.fa-lg(href="http://www.instagram.com/oobfest" title="Instagram")
+				li
+					a.fa.fa-flickr.fa-lg(href="https://www.flickr.com/photos/oob_pics" title="Flickr")
+				li
+					a.fa.fa-github-square.fa-lg(href="https://github.com/oobfest" title="GitHub")
+				li
+					a(href="#") Contact
+
 		script(src="js/popper.min.js")
 		script(src="js/bootstrap.min.js")
 		script.

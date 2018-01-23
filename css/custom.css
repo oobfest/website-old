@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800');
+body { font-family: 'Raleway', sans-serif; }
+
+body {
+	padding-top: 80px;
+	padding-bottom: 60px;
+
+	background: url('../img/marcella-arguello.jpg') no-repeat top center fixed; 
+	background-size: cover;
+	background-color: #1A1A1A;
+
+	color: white;
+}
+
+main {
+
+}
+
+.navbar { font-size: 1.25em; text-transform: uppercase; font-weight: 800; padding: 0;}
+.navbar-expand-lg { justify-content: space-between; }
+.bg-dark { background-color: #242524; }
+.navbar-brand { padding: 0; margin: 0 1.25em; }
+.navbar-toggler { margin-right: 1em; }
+.navbar-collapse { flex-grow: 0; }
+.navbar-dark .navbar-nav .nav-link 			{ color: white; text-shadow: 2px 2px 0px rgba(0,0,0,0.2); }
+.navbar-dark .navbar-nav .nav-link:hover 	{ color: white; }
+.navbar-dark .navbar-nav .nav-link:focus 	{ color: white; }
+.navbar-expand-lg .navbar-nav .nav-link { padding: 1.25em; }
+.blue 	{ background-color: #12808D; }	.blue:hover 	{ background-color: #094249; }
+.red	{ background-color: #F04B22; }	.red:hover		{ background-color: #b92f0d; }
+.yellow	{ background-color: #F89F1C; }	.yellow:hover	{ background-color: #c27606; }
+.green	{ background-color: #6C8D3B; }	.green:hover	{ background-color: #435724; }
+
+
+footer { 
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.2); 
+}
+
+footer a {
+	color: rgba(255,255,255,0.5);
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: white;
+}
+
+footer > ul {
+	padding: 0;
+	margin: 0;
+	float: right;
+	list-style-type: none;
+}
+
+footer > ul li {
+	padding: 1em;
+	display: inline;
+}
