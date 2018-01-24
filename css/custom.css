@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800')
 body { font-family: 'Raleway', sans-serif; }
 
 body {
 	padding-top: 80px;
 	padding-bottom: 60px;
 
-	background: url('../img/marcella-arguello.jpg') no-repeat top center fixed; 
+	background: url('../img/marcella-arguello.jpg') no-repeat bottom center fixed; 
 	background-size: cover;
 	background-color: #1A1A1A;
 
@@ -39,6 +39,8 @@ footer {
 	height: 60px;
 	line-height: 60px;
 	text-shadow: 2px 2px 0px rgba(0,0,0,0.2); 
+	padding-left: 1em;
+	color: grey;
 }
 
 footer a {
