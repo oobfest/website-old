@@ -6,7 +6,7 @@ html(lang="en")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/custom.css")
 		title OoBleck
-		script(src='js/jquery.slim.min.js')
+		script(src='js/jquery.min.js')
 		script(src='https://use.fontawesome.com/66f808d981.js')
 		script(src='https://www.google.com/recaptcha/api.js')
 	body
@@ -58,7 +58,7 @@ html(lang="en")
 
 		#contact-modal.modal
 			.modal-dialog.modal-dialog-centered
-				form.modal-content(method="POST" action="http://app.oobfest.com/contact")
+				form#contact-form.modal-content
 					.modal-header
 						h5.modal-title Contact
 						button.close(data-dismiss="modal")
@@ -68,8 +68,8 @@ html(lang="en")
 							label.col-form-label(for="contact-name") Full Name
 							input#contact-subject.form-control(type="text" name="subject" required)
 						.form-group
-							label.col-form-label(for="contact-subject") Email
-							input#contact-subject.form-control(type="email" name="subject" required)
+							label.col-form-label(for="contact-email") Email
+							input#contact-subject.form-control(type="email" name="email" required)
 						.form-group
 							label.col-form-label(for="contact-subject") Subject
 							input#contact-subject.form-control(type="text" name="subject")
@@ -79,12 +79,16 @@ html(lang="en")
 						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
 					.modal-footer
 						button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
-						button.btn.btn-primary(type="submit") Send
+						button#send-message.btn.btn-primary(type="button") Send
 
 		script(src="js/popper.min.js")
 		script(src="js/bootstrap.min.js")
 		script.
-			// Initialize popovers
-			$(function () {
-			  $('[data-toggle="popover"]').popover()
+			// Contact form
+			$("#send-message").click(function() {
+				var contactFormData = $('#contact-form').serialize()
+				$.post('http://app.oobfest.com/contact', contactFormData, function(result) {
+					alert("YAY")
+					console.log(result)
+				})
 			})
