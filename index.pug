@@ -6,10 +6,11 @@ html(lang="en")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/custom.css")
 		title OoBleck
-		script(src="js/jquery.slim.min.js")
-		script(src="https://use.fontawesome.com/66f808d981.js")
+		script(src='js/jquery.slim.min.js')
+		script(src='https://use.fontawesome.com/66f808d981.js')
+		script(src='https://www.google.com/recaptcha/api.js')
 	body
-		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.oob-navbar
+		nav.oob.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top.oob-navbar.justify-content-between
 			a.navbar-brand(href="#")
 				img(alt="Out of Bounds Comedy Festival" src="img/logo-no-text.png" width="133px" height="auto")
 			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-content")
@@ -27,21 +28,52 @@ html(lang="en")
 		main
 			.container
 
-		footer.bg-dark
-			span © 2018 Out of Bounds Comedy Festival
-			ul
-				li 
-					a.fa.fa-facebook-official.fa-lg(href="http://www.facebook.com/oobfest" title="Facebook")
-				li 
-					a.fa.fa-twitter-square.fa-lg(href="http://www.twitter.com/oobfest" title="Twitter")
-				li
-					a.fa.fa-instagram.fa-lg(href="http://www.instagram.com/oobfest" title="Instagram")
-				li
-					a.fa.fa-flickr.fa-lg(href="https://www.flickr.com/photos/oob_pics" title="Flickr")
-				li
-					a.fa.fa-github-square.fa-lg(href="https://github.com/oobfest" title="GitHub")
-				li
-					a(href="#") Contact
+		footer.navbar.fixed-bottom.navbar-expand-lg.navbar-dark.bg-dark.justify-content-between
+			#footer-menu.collapse.navbar-collapse
+				ul.navbar-nav.form-inline
+					li.nav-item
+						a.btn.btn-sm.btn-secondary.m-2(href="http://www.facebook.com/oobfest")
+							span.fa.fa-facebook-official.fa-lg
+							span.footer-link-text &nbsp; Facebook
+					li.nav-item 
+						a.btn.btn-sm.btn-secondary.m-2(href="http://www.twitter.com/oobfest")
+							span.fa.fa-twitter-square.fa-lg
+							span.footer-link-text &nbsp; Twitter
+					li.nav-item
+						a.btn.btn-sm.btn-secondary.m-2(href="http://www.instagram.com/oobfest")
+							span.fa.fa-instagram.fa-lg
+							span.footer-link-text &nbsp; Instagram
+					li.nav-item
+						a.btn.btn-sm.btn-secondary.m-2(href="https://www.flickr.com/photos/oob_pics")
+							span.fa.fa-flickr.fa-lg
+							span.footer-link-text &nbsp; Flickr
+					li.nav-item
+						a.btn.btn-sm.btn-secondary.m-2(href="https://github.com/oobfest")
+							span.fa.fa-github-square.fa-lg
+							span.footer-link-text &nbsp; GitHub
+			button.navbar-toggler(data-toggle="collapse" data-target="#footer-menu")
+				span.navbar-toggler-icon
+			span.navbar-text.pull-right
+				a.nav-link.underline-on-hover(href="#" data-toggle="modal" data-target="#contact-modal") Contact
+
+		#contact-modal.modal
+			.modal-dialog.modal-dialog-centered
+				form.modal-content(method="POST" action="app.oobfest.com/contact")
+					.modal-header
+						h5.modal-title Contact
+						button.close(data-dismiss="modal")
+							span &times;
+					.modal-body
+						.form-group
+							label.col-form-label(for="contact-subject") Subject
+							input#contact-subject.form-control(type="text")
+						.form-group
+							label.col-form-label(for="contact-message") Message
+							textarea#contact-message.form-control
+						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
+					.modal-footer
+						button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+						button.btn.btn-primary(type="button") Send
 
 		script(src="js/popper.min.js")
 		script(src="js/bootstrap.min.js")
