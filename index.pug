@@ -65,11 +65,17 @@ html(lang="en")
 							span &times;
 					.modal-body
 						.form-group
+							label.col-form-label(for="contact-name") Full Name
+							input#contact-subject.form-control(type="text" name="subject" required)
+						.form-group
+							label.col-form-label(for="contact-subject") Email
+							input#contact-subject.form-control(type="email" name="subject" required)
+						.form-group
 							label.col-form-label(for="contact-subject") Subject
-							input#contact-subject.form-control(type="text")
+							input#contact-subject.form-control(type="text" name="subject")
 						.form-group
 							label.col-form-label(for="contact-message") Message
-							textarea#contact-message.form-control
+							textarea#contact-message.form-control(name="message" required)
 						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
 					.modal-footer
 						button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
