@@ -58,7 +58,7 @@ html(lang="en")
 
 		#contact-modal.modal
 			.modal-dialog.modal-dialog-centered
-				form.modal-content(method="POST" action="app.oobfest.com/contact")
+				form.modal-content(method="POST" action="http://app.oobfest.com/contact")
 					.modal-header
 						h5.modal-title Contact
 						button.close(data-dismiss="modal")
@@ -73,7 +73,7 @@ html(lang="en")
 						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
 					.modal-footer
 						button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
-						button.btn.btn-primary(type="button") Send
+						button.btn.btn-primary(type="submit") Send
 
 		script(src="js/popper.min.js")
 		script(src="js/bootstrap.min.js")
