@@ -84,11 +84,22 @@ html(lang="en")
 		script(src="js/popper.min.js")
 		script(src="js/bootstrap.min.js")
 		script.
-			// Contact form
+
+			// Click "send messgage"
 			$("#send-message").click(function() {
+				
+				// Get form data
 				var contactFormData = $('#contact-form').serialize()
-				$.post('app.oobfest.com/contact', contactFormData, function(result) {
-					alert("YAY")
-					console.log(result)
-				})
+
+				// Close modal
+				$("#contact-modal").modal('hide')
+
+				// Reset form
+				$("#contact-form")[0].reset()
+
+				// POST message to server
+				$.post('app.oobfest.com/contact', contactFormData, function(response) {
+					alert("Message sent!")
+					console.log(response)
+				}, 'json')
 			})
