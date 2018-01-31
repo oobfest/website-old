@@ -11,7 +11,7 @@ $("#send-message").click(function() {
 	$("#contact-form")[0].reset()
 
 	// POST message to server
-	$.post('app.oobfest.com/contact', contactFormData, function(response) {
+	$.post('http://app.oobfest.com/contact', contactFormData, function(response) {
 		alert("Message sent!")
 		console.log(response)
 	}, 'json')
