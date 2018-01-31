@@ -87,7 +87,7 @@ html(lang="en")
 			// Contact form
 			$("#send-message").click(function() {
 				var contactFormData = $('#contact-form').serialize()
-				$.post('http://app.oobfest.com/contact', contactFormData, function(result) {
+				$.post('app.oobfest.com/contact', contactFormData, function(result) {
 					alert("YAY")
 					console.log(result)
 				})
