@@ -6,3 +6,8 @@ gulp.task('pug', ()=> {
 		.pipe(pug())
 		.pipe(gulp.dest(""))
 })
+
+gulp.task('watch', function() {
+	gulp.watch(['index.pug'], ['pug'])
+
+});
