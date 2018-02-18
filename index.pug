@@ -5,7 +5,7 @@ html(lang="en")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/custom.css")
-		title Out of Bounds Comedy Festival
+		title Out of Bounds Comedy Festival | Labor Day Weekend
 		script(src='js/jquery.min.js')
 		script(src='https://use.fontawesome.com/66f808d981.js')
 		script(src='https://www.google.com/recaptcha/api.js')
@@ -17,23 +17,31 @@ html(lang="en")
 			gtag('config', 'UA-114369938-1')
 
 	body
-		nav.oob.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top.oob-navbar.justify-content-between
+		// nav.oob.navbar.navbar-expand-md.navbar-dark.fixed-top.oob-navbar.justify-content-between
 			a.navbar-brand(href="#")
 				img(alt="Out of Bounds Comedy Festival" src="img/logo-no-text.png" width="133px" height="auto")
 			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-content")
 				span.navbar-toggler-icon
 			#navbar-content.collapse.navbar-collapse
 				ul.navbar-nav.mr-auto.oob-nav
-					//li.nav-item.red
+					li.nav-item.red
 						a.nav-link(href="#") Get Festival Pass
-					//li.nav-item.blue
+					li.nav-item.blue
 						a.nav-link(href="#") About
-					//li.nav-item.yellow
+					li.nav-item.yellow
 						a.nav-link(href="#") Blog
 					li.nav-item.green
 						a.nav-link(href="http://apply.oobfest.com/") Apply
 		main
 			.container
+				.row
+					.col.text-center
+						img.mx-auto.d-block(src="img/logo.png")
+						p.light Labor Day Weekend, August 28th to September 3rd
+						h2 Now Accepting Submissions 
+						a.btn.btn-lg.btn-primary( href="http://apply.oobfest.com/") Apply
+
+
 
 		footer.navbar.fixed-bottom.navbar-expand-lg.navbar-dark.bg-dark.justify-content-between
 			#footer-menu.collapse.navbar-collapse
@@ -83,7 +91,7 @@ html(lang="en")
 						.form-group
 							label.col-form-label(for="contact-message") Message
 							textarea#contact-message.form-control(name="message" required)
-						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
+						//.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
 					.modal-footer
 						button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
 						button#send-message.btn.btn-primary(type="button") Send

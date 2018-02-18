@@ -1,20 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800')
+
+@font-face {
+	font-family: 'gotham';
+	src: url('https://www.outofboundscomedy.com/wp-content/themes/Divi-child/fonts/GothamHTF-Black.ttf');
+}
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 body { font-family: 'Raleway', sans-serif; }
 
 body {
 	padding-top: 80px;
 
-	background: url('../img/marcella-arguello.jpg') no-repeat bottom center fixed; 
+	background: url('../img/marcella-arguello-cropped-dark.jpeg') no-repeat bottom center fixed; 
 	background-size: cover;
 	background-color: #1A1A1A;
 }
 
-main {
-
+h2 {
+	font-family: 'Roboto', sans-serif;
+	color: #f9a01b;
+	letter-spacing: -0.035em;
+	text-transform: uppercase;
+	font-size: 46px;
+	font-weight: 500;
 }
 
+.light { 
+	color: white; 
+	margin-top: 16px;
+	font-size: 28px;
+	margin-bottom: 3px;
+}
+
+.btn-primary {background-color: #15808c;border-color: #15808c;}
+.btn-primary:hover, .btn-primary:active, .btn-primary:active:focus { background-color: #116a73 !important; border-color: #116a73 !important}
+
+.container { margin-bottom: 125px; }
+
 .oob.navbar { font-size: 1.25em; text-transform: uppercase; font-weight: 800; padding: 0;}
-.bg-dark { background-color: #242524; }
+.bg-dark { background-color: #0a0a0a; }
 .oob .navbar-brand { padding: 0; margin: 0 1.25em; }
 .oob .navbar-toggler { margin-right: 1em; }
 .oob .navbar-collapse { flex-grow: 0; }
