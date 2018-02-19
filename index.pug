@@ -33,43 +33,69 @@ html(lang="en")
 					li.nav-item.green
 						a.nav-link(href="http://apply.oobfest.com/") Apply
 		main
-			.container
-				.row
+			.container-fluid
+				.row.full-height
 					.col.text-center
-						img.mx-auto.d-block(src="img/logo.png" style="max-width:100%")
-						p.light Labor Day Weekend, August 28th to September 3rd
-						h2 Now Accepting Submissions 
-						a.btn.btn-lg.btn-primary( href="http://apply.oobfest.com/") Apply
+						h1
+							img.mx-auto.d-block(src="img/logo.png" style="max-width:100%" alt="Out of Bounds Comedy Festival")
+						h3 Labor Day Weekend, August 28th to September 3rd in Austin, Texas
+						h2 Now Accepting Submissions
+						a.btn.btn-lg.btn-primary.m-3(href="http://apply.oobfest.com/") Apply Now
+				.row.justify-content-center.dark-background.mt-3
+					.col-sm-8.text-center.m-3
+						h4 What is Out of Bounds?
+						p The  
+							strong Out of Bounds Comedy Festival (OoB)  
+							| is a live performance festival that showcases the best in improv, sketch and standup. OoB is Austin's longest-running comedy festival and 
+							em the largest multi-disciplinary comedy festival in the south
+							| .
+				//.row.text-center.dark-background
+					.col
+						h3 Last Year's Stats
+				.row.text-center.dark-background.pb-4
+					.col-sm-3
+						img.icon(src="img/icon-sketch.png")
+						h4.color-blue 500+ Performers
+					.col-sm-3
+						img.icon(src="img/icon-standup.png")
+						h4.color-red 130 Acts
+					.col-sm-3
+						img.icon(src="img/icon-improv.png")
+						h4.color-orange 10 Stages
+					.col-sm-3
+						img.icon(src="img/icon-variety.png")
+						h4.color-green 7 Days
 
-
-
-		footer.navbar.fixed-bottom.navbar-expand-lg.navbar-dark.bg-dark.justify-content-between
-			#footer-menu.collapse.navbar-collapse
-				ul.navbar-nav.form-inline
-					li.nav-item
-						a.btn.btn-sm.btn-secondary.m-2(href="http://www.facebook.com/oobfest")
-							span.fa.fa-facebook-official.fa-lg
-							span.footer-link-text &nbsp; Facebook
-					li.nav-item 
-						a.btn.btn-sm.btn-secondary.m-2(href="http://www.twitter.com/oobfest")
-							span.fa.fa-twitter-square.fa-lg
-							span.footer-link-text &nbsp; Twitter
-					li.nav-item
-						a.btn.btn-sm.btn-secondary.m-2(href="http://www.instagram.com/oobfest")
-							span.fa.fa-instagram.fa-lg
-							span.footer-link-text &nbsp; Instagram
-					li.nav-item
-						a.btn.btn-sm.btn-secondary.m-2(href="https://www.flickr.com/photos/oob_pics")
-							span.fa.fa-flickr.fa-lg
-							span.footer-link-text &nbsp; Flickr
-					li.nav-item
-						a.btn.btn-sm.btn-secondary.m-2(href="https://github.com/oobfest")
-							span.fa.fa-github-square.fa-lg
-							span.footer-link-text &nbsp; GitHub
-			button.navbar-toggler(data-toggle="collapse" data-target="#footer-menu")
-				span.navbar-toggler-icon
-			span.navbar-text.pull-right
-				a.nav-link.underline-on-hover(href="#" data-toggle="modal" data-target="#contact-modal") Contact
+			footer.dark-background
+				.navbar.navbar-expand-lg.justify-content-between.navbar-dark
+					#footer-menu.collapse.navbar-collapse
+						ul.navbar-nav.form-inline
+							li.nav-item
+								a.m-2(href="http://www.facebook.com/oobfest")
+									span.fa.fa-facebook-official.fa-lg
+									span.footer-link-text  Facebook
+							li.nav-item 
+								a.m-2(href="http://www.twitter.com/oobfest")
+									span.fa.fa-twitter-square.fa-lg
+									span.footer-link-text  Twitter
+							li.nav-item
+								a.m-2(href="http://www.instagram.com/oobfest")
+									span.fa.fa-instagram.fa-lg
+									span.footer-link-text  Instagram
+							li.nav-item
+								a.m-2(href="https://www.flickr.com/photos/oob_pics")
+									span.fa.fa-flickr.fa-lg
+									span.footer-link-text  Flickr
+							li.nav-item
+								a.m-2(href="https://github.com/oobfest")
+									span.fa.fa-github-square.fa-lg
+									span.footer-link-text  GitHub
+					button.navbar-toggler(data-toggle="collapse" data-target="#footer-menu")
+						span.navbar-toggler-icon
+					span.navbar-text.pull-right
+						a.nav-link.underline-on-hover(href="#" data-toggle="modal" data-target="#contact-modal")
+							span.fa.fa-envelope.fa-lg
+							span.footer-link-text  Contact
 
 		#contact-modal.modal
 			.modal-dialog.modal-dialog-centered

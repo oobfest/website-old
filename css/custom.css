@@ -1,40 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800')
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
-@font-face {
-	font-family: 'gotham';
-	src: url('https://www.outofboundscomedy.com/wp-content/themes/Divi-child/fonts/GothamHTF-Black.ttf');
-}
+@font-face { font-family: 'gotham-black'; src: url(../font/gotham-black.ttf); }
+@font-face { font-family: 'gotham-book'; src: url(../font/gotham-book.ttf); }
 
- @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-body { font-family: 'Raleway', sans-serif; }
-
-body {
-	padding-top: 80px;
+body { 
+	color: white;
+	font-family: 'gotham-book', sans-serif;
 
 	background: url('../img/marcella-arguello-cropped-dark.jpeg') no-repeat bottom center fixed; 
 	background-size: cover;
 	background-color: #1A1A1A;
 }
 
+h1 { 
+	padding-top: 80px; 
+}
+
 h2 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'gotham-black', sans-serif;
 	color: #f9a01b;
-	letter-spacing: -0.035em;
 	text-transform: uppercase;
 	font-size: 46px;
-	font-weight: 500;
 }
 
-.light { 
-	color: white; 
+h3 {
+	color: white;
 	margin-top: 16px;
 	font-size: 28px;
-	margin-bottom: 3px;
+	font-weight: bold;
+	letter-spacing: -1px;
 }
 
+h4 {
+	color: #f9a01b;
+	font-family: 'gotham-black', sans-serif;
+	padding-top: 1em;
+}
 
-.btn-primary {background-color: #15808c;border-color: #15808c;}
+.full-height { min-height: 100vh; max-height: 1080px;}
+.dark-background { background-color: #262626; }
+
+.color-red 		{ color:#f04c23; }
+.color-blue		{ color:#13818d; }
+.color-orange	{ color:#f9a11b; }
+.color-green	{ color:#6d8e3b; }
+.color-offwhite	{ color:#ffe9a3; }
+
+.icon { height: auto; width: 100%; max-width: 180px; }
+
+.modal { color: #212529; }
+
+.btn-primary { background-color: #15808c; border-color: #15808c;}
 .btn-primary:hover, .btn-primary:active, .btn-primary:active:focus { background-color: #116a73 !important; border-color: #116a73 !important}
 
 .container { margin-bottom: 125px; }
@@ -44,9 +61,10 @@ h2 {
 .oob .navbar-brand { padding: 0; margin: 0 1.25em; }
 .oob .navbar-toggler { margin-right: 1em; }
 .oob .navbar-collapse { flex-grow: 0; }
-.navbar-dark .navbar-nav .nav-link 			{ color: white; text-shadow: 2px 2px 0px rgba(0,0,0,0.2); }
-.navbar-dark .navbar-nav .nav-link:hover 	{ color: white; }
-.navbar-dark .navbar-nav .nav-link:focus 	{ color: white; }
+a { color: white; text-shadow: 2px 2px 0px rgba(0,0,0,0.2); }
+a:hover 	{ color: white; }
+a:focus 	{ color: white; }
+a.fa:hover 	{text-decoration: none; }
 .navbar-expand-md .navbar-nav .nav-link { padding: 1.25em; }
 .blue 	{ background-color: #12808D; }	.blue:hover 	{ background-color: #094249; }
 .red	{ background-color: #F04B22; }	.red:hover		{ background-color: #b92f0d; }
