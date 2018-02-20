@@ -41,8 +41,8 @@ html(lang="en")
 						h3 Labor Day Weekend, August 28th to September 3rd in Austin, Texas
 						h2 Now Accepting Submissions
 						a.btn.btn-lg.btn-primary.m-3(href="http://apply.oobfest.com/") Apply Now
-				.row.justify-content-center.dark-background.mt-3
-					.col-sm-8.text-center.m-3
+				.row.justify-content-center.dark-background.mt-3.pb-4
+					.col-sm-6.text-center.m-3
 						h4 What is Out of Bounds?
 						p The  
 							strong Out of Bounds Comedy Festival (OoB)  
@@ -65,6 +65,11 @@ html(lang="en")
 					.col-sm-3
 						img.icon(src="img/icon-variety.png")
 						h4.color-green 7 Days
+
+				.row.text-center.dark-background.pb-4.justify-content-center
+					.col-sm-6
+						h4 Out of Bounds is a Certified 501(c)(3) Nonprofit
+						p Our mission is to bring world-wide attention to the Austin comedy community by featuring improv, sketch, podcasts, musical, variety and stand-up, strengthening performer networks, providing educational opportunities to our talent and stimulating both Austin tourism and industry interest.
 
 			footer.dark-background
 				.navbar.navbar-expand-md.justify-content-between.navbar-dark
@@ -121,7 +126,7 @@ html(lang="en")
 						.form-group
 							label.col-form-label(for="contact-message") Message
 							textarea#contact-message.form-control(name="message" required)
-						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
+						//.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
 					.modal-footer
 						button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
 						button#send-message.btn.btn-primary(type="button") Send
