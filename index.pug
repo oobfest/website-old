@@ -5,7 +5,8 @@ html(lang="en")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 		link(rel="stylesheet" href="css/bootstrap.min.css")
 		link(rel="stylesheet" href="css/custom.css")
-		title Out of Bounds Comedy Festival | Labor Day Weekend
+		link(rel="stylesheet" href="css/bump.css")
+		title Out of Bounds Comedy Festival | Labor Day Weekend | Austin, TX
 		script(src='js/jquery.min.js')
 		script(src='https://use.fontawesome.com/66f808d981.js')
 		script(src='https://www.google.com/recaptcha/api.js')
@@ -55,16 +56,16 @@ html(lang="en")
 					.col
 						h3 Last Year's Stats
 				.row.text-center.dark-background.pb-4.justify-content-center
-					.col-md-2
+					.col-md-2.hide-me(style="opacity:0")
 						img.icon(src="img/icon-sketch.png")
 						h4.color-blue 500+ Performers
-					.col-md-2
+					.col-md-2.hide-me(style="opacity:0")
 						img.icon(src="img/icon-standup.png")
 						h4.color-red 130 Acts
-					.col-md-2
+					.col-md-2.hide-me(style="opacity:0")
 						img.icon(src="img/icon-improv.png")
 						h4.color-orange 10 Stages
-					.col-md-2
+					.col-md-2.hide-me(style="opacity:0")
 						img.icon(src="img/icon-variety.png")
 						h4.color-green 7 Days
 
@@ -136,6 +137,7 @@ html(lang="en")
 		script(src="js/popper.min.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/smooth-scrolling.js")
+		script(src="js/fade-in.js")
 		script.
 
 			// Click "send message"

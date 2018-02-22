@@ -1,0 +1,9 @@
+.icon:hover {
+	animation:bump 0.2s  linear;
+}
+
+@keyframes bump {
+	0% 		{transform:scale(1.0,1.0);}
+	50% 	{transform:scale(1.1,1.1);}
+	100% 	{transform:scale(1.0,1.0);}
+}
