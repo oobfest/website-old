@@ -21,6 +21,9 @@ h2 {
 	font-size: 46px;
 }
 
+h2 a { color: #f9a01b; }
+h2 a:hover { color: #f9a01b; }
+
 h3 {
 	color: white;
 	margin-top: 16px;
