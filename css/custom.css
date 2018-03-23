@@ -38,6 +38,11 @@ h4 {
 	padding-top: 1em;
 }
 
+a { color: white; text-shadow: 2px 2px 0px rgba(0,0,0,0.2); }
+a:hover 	{ color: white; }
+a:focus 	{ color: white; }
+a.fa:hover 	{text-decoration: none; }
+
 footer { background-color: #0a0a0a; }
 
 .full-height { min-height: 100vh; max-height: 1080px;}
@@ -53,8 +58,10 @@ footer { background-color: #0a0a0a; }
 
 .modal { color: #212529; text-shadow: none; }
 
+/*
 .btn-primary { background-color: #15808c; border-color: #15808c;}
 .btn-primary:hover, .btn-primary:active, .btn-primary:active:focus { background-color: #116a73 !important; border-color: #116a73 !important}
+*/
 
 .container { margin-bottom: 125px; }
 

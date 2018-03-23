@@ -112,16 +112,20 @@ html(lang="en")
 						.form-group
 							label.col-form-label(for="contact-message") Message
 							textarea#contact-message.form-control(name="message" required)
-						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx")
+						.g-recaptcha(data-sitekey="6LfAnkIUAAAAAJYFRNJnZCGuxXGXHP5OoBIl_TOx" data-callback="recaptchaCallback")
 					.modal-footer
 						button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
-						button#send-message.btn.btn-primary(type="button") Send
+						button#send-message.btn.btn-primary(type="button" disabled="disabled") Send
 
 		script(src="js/popper.min.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/smooth-scrolling.js")
 		script(src="js/fade-in.js")
 		script.
+
+			function recaptchaCallback() {
+				$("#send-message").prop('disabled', false)
+			}
 
 			// Click "send message"
 			$("#send-message").click(function() {
@@ -139,5 +143,8 @@ html(lang="en")
 				$.post('http://app.oobfest.com/contact', contactFormData, function(response) {
 					alert("Message sent!")
 					console.log(response)
-				}, 'json')
+				}, 'json').fail(function(response) { 
+					alert("Recaptcha required")
+					console.log(response)
+				})
 			})
