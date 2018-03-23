@@ -143,8 +143,5 @@ html(lang="en")
 				$.post('http://app.oobfest.com/contact', contactFormData, function(response) {
 					alert("Message sent!")
 					console.log(response)
-				}, 'json').fail(function(response) { 
-					alert("Recaptcha required")
-					console.log(response)
-				})
+				}, 'json')
 			})
