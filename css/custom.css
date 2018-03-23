@@ -58,19 +58,10 @@ footer { background-color: #0a0a0a; }
 
 .container { margin-bottom: 125px; }
 
-.oob.navbar { font-size: 1.25em; text-transform: uppercase; font-weight: 800; padding: 0;}
 .bg-dark { background-color: #0a0a0a; }
-.oob .navbar-brand { padding: 0; margin: 0 1.25em; }
-.oob .navbar-toggler { margin-right: 1em; }
-.oob .navbar-collapse { flex-grow: 0; }
-a { color: white; text-shadow: 2px 2px 0px rgba(0,0,0,0.2); }
-a:hover 	{ color: white; }
-a:focus 	{ color: white; }
-a.fa:hover 	{text-decoration: none; }
-.navbar-expand-md .navbar-nav .nav-link { padding: 1.25em; }
-.blue 	{ background-color: #12808D; }	.blue:hover 	{ background-color: #094249; }
-.red	{ background-color: #F04B22; }	.red:hover		{ background-color: #b92f0d; }
-.yellow	{ background-color: #F89F1C; }	.yellow:hover	{ background-color: #c27606; }
-.green	{ background-color: #6C8D3B; }	.green:hover	{ background-color: #435724; }
+.blue 	 { background-color: #12808D; }	.blue:hover 	{ background-color: #094249; }
+.red	 { background-color: #F04B22; }	.red:hover		{ background-color: #b92f0d; }
+.yellow	 { background-color: #F89F1C; }	.yellow:hover	{ background-color: #c27606; }
+.green	 { background-color: #6C8D3B; }	.green:hover	{ background-color: #435724; }
 
 a.nav-link.underline-on-hover:hover { text-decoration: underline; }
